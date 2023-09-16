@@ -43,8 +43,32 @@ function SignIn(){
     auth.signInWithPopup(provider);
   }
   return (
-    <button onClick = {signInWithGoogle}>Sign in with Google</button>
-  )
+    <div>
+  <header>
+    <h1>Join Our Chat</h1>
+    <p>Connect with your friends in real-time!</p>
+  </header>
+  <main>
+    <section class="features">
+      <div class="feature">
+        <img src="https://img.freepik.com/premium-vector/chat-internet-friend-talking-business_68292-840.jpg" alt="Icon 1" />
+        <h2>Chat with Friends</h2>
+        <p>Talk to your friends in real-time, no matter where they are.</p>
+      </div>
+      <div class="feature">
+        <img src="https://th.bing.com/th/id/R.f22cd3793c6880d1deb6c874493b4b93?rik=JvBHuROoZpONSQ&pid=ImgRaw&r=0" alt="Icon 3" />
+        <h2>Fun Emojis</h2>
+        <p>Express your emotions with a wide variety of emojis and stickers.</p>
+      </div>
+    </section>
+    <section class="subscribe">
+      <h2>Join Now</h2>
+      <p>Don't miss the fun, join our chat today.</p>
+      <button class="subscribe-button" onClick={signInWithGoogle}>Sign in with Google</button>
+    </section>
+  </main>
+</div>
+  );
 }
 
 function SignOut(){
@@ -83,7 +107,7 @@ function ChatRoom(){
 
       <form onSubmit={sendMessage}>
         <input value={formValue} onChange={(e) => setFormValue(e.target.value)}/>
-        <button type="submit"></button>
+        <button type="submit">Send</button>
       </form>
     </>
   )
