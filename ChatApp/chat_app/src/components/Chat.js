@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Chat.css";
 import { db, auth } from "../firebase-config";
 import {
   collection,
@@ -9,8 +10,6 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-
-//import "../styles/Chat.css";
 
 export const Chat = ({ room }) => {
   const [messages, setMessages] = useState([]);
@@ -24,6 +23,7 @@ export const Chat = ({ room }) => {
       orderBy("createdAt")
     );
     const unsuscribe = onSnapshot(queryMessages, (snapshot) => {
+      console.log()
       let messages = [];
       snapshot.forEach((doc) => {
         messages.push({ ...doc.data(), id: doc.id });
@@ -33,7 +33,7 @@ export const Chat = ({ room }) => {
     });
 
     return () => unsuscribe();
-  }, []);
+  }, [room]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
