@@ -39,9 +39,9 @@ function App() {
           </button>
         </div>
       ) : (
-        <div>
+        <div className="RoomChangeDiv">
           <Chat room={currentRoom} />
-          <input onChange={(e) => setRoom(e.target.value)} />
+          <input className="RoomChangeInput" onChange={(e) => setRoom(e.target.value)} />
           <button
             onClick={() => {
               setCurrentRoom(room);

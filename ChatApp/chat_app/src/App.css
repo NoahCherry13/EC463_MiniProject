@@ -14,9 +14,19 @@ body {
 
 .app-header {
   text-align: center;
-  background-color: #3b5998;
+  background-color: #af5050;
   color: white;
   width: 100%;
+}
+
+.RoomChangeDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.RoomChangeInput{
+  margin-top: 10%;
 }
 
 .app-container {
@@ -61,3 +71,8 @@ body {
 .sign-out {
   margin-top: 50px;
 }
+
+
+
+/* button */
+

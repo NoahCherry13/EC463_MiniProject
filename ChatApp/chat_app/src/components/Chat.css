@@ -10,7 +10,7 @@
     border: 2px solid #3b5998;
   }
   .header {
-    background-color: #3b5998;
+    background-color: #af5050;
     color: white;
     width: 100%;
     text-align: center;
@@ -59,7 +59,7 @@
   .send-button {
     border: none;
     outline: none;
-    background: #3b5998;
+    background: #af5050;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
