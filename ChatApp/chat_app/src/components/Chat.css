@@ -3,16 +3,18 @@
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
-    width: 200px;
-    height: 350px;
+    width: 30%;
+    height:70vh;
     margin-right: 200px;    
     border-radius: 5px;
-    overflow:visible;
-    border: 2px solid #3b5998;
-    background-color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    border: 0px solid #702b2b;
+    background-color: rgb(184, 181, 160);
   }
   .header {
-    background-color: #af5050;
+    background-color: #702b2b;
     color: white;
     width: 100%;
     text-align: center;
@@ -26,12 +28,16 @@
     overflow-y: auto;
     padding: 10px;
     margin-bottom: 10px;
+    
   }
   
   .message {
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    inline-size: 100%;
   }
   
  
@@ -39,30 +45,34 @@
     font-weight: bold;
     margin-right: 10px;
     color: #333;
+    word-break: keep-all;
   }
   
   .new-message-form {
     display: flex;
     width: 100%;
     padding: 10px;
+    border-top: 10px #333;
+    margin-left: 5px;
   }
   
   .new-message-input {
     flex: 1;
-    border: none;
-    outline: none;
     background: transparent;
     font-size: 16px;
     color: #333;
     padding: 10px;
     border-radius: 5px 0 0 5px;
+    word-break: break-all;
+    inline-size: 100%;
   }
   
   .send-button {
     border: none;
     outline: none;
-    background: #af5050;
+    background: #702b2b;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
+    margin-right: 7px;
   }
