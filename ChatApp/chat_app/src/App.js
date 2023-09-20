@@ -39,17 +39,19 @@ function App() {
           </button>
         </div>
       ) : (
-        <div className="RoomChangeDiv">
+        <div className="room-div">
           <Chat room={currentRoom} />
-          <input className="RoomChangeInput" onChange={(e) => setRoom(e.target.value)} />
-          <button
-            onClick={() => {
-              setCurrentRoom(room);
-              console.log(room)
-            }}
-          >
-            Enter Chat
-          </button>
+          <div className="room-change-div">
+            <input className="room-input-field" onChange={(e) => setRoom(e.target.value)} />
+            <button className="button" href="#" color="#1e9bff"
+              onClick={() => {
+                setCurrentRoom(room);
+                console.log(room)
+              }}
+            >
+              Enter Chat
+            </button>
+          </div>
         </div>
       )}
     </AppWrapper>
