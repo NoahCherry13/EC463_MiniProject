@@ -28,7 +28,7 @@ function App() {
       {!isInChat ? (
         <div className="room">
           <label> Type room name: </label>
-          <input onChange={(e) => setRoom(e.target.value)} />
+          <input onChange={(e) => setRoom(e.target.value) } />
           <button
             onClick={() => {
               setIsInChat(true);
@@ -42,7 +42,7 @@ function App() {
         <div className="room-div">
           <Chat room={currentRoom} />
           <div className="room-change-div">
-            <input className="room-input-field" onChange={(e) => setRoom(e.target.value)} />
+            <input className="room-input-field" placeholder="Enter A Chat Room" onChange={(e) => setRoom(e.target.value)} />
             <button className="button" href="#" color="#1e9bff"
               onClick={() => {
                 setCurrentRoom(room);

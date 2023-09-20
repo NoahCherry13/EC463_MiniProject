@@ -9,29 +9,28 @@ body {
 
 .App {
   display: flex;
-
   flex-direction: column;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app-header {
   text-align: center;
-  background-color: #af5050;
+  background-color: #702b2b;
   color: white;
   
 }
 
 .room-div {
   display: flex;
+  position: relative;
   flex-direction: row-reverse;
   margin-top: 20px;
-
+  min-width: 100px;
 }
 
 .room-change-div{
   display: flex;
   flex-direction: column;
-
   margin-right: 20%;
 }
 
@@ -42,53 +41,20 @@ body {
 .room {
   display: flex;
   width: 75%;
-  height: 100%;
+  position: relative;
+  min-width: 100px;
 }
-
-/* .room label {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-} */
-
-/* .room input {
-  width: 200px;
-  height: 30px;
-  border: 2px solid #3b5998;
-  border-radius: 6px;
-  padding-left: 5px;
-  font-size: 20px;
-  text-align: center;
-  margin: 5px;
-}
-.room button {
-  width: 210px;
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  padding-left: 5px;
-  font-size: 20px;
-  text-align: center;
-  margin: 5px;
-  background-color: #3b5998;
-  color: white;
-  cursor: pointer;
-}
-
-.sign-out {
-  margin-top: 50px;
-} */
 
 
 
 /* button */
 
 .button {
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 10%;
   margin-left: 25px;
-  margin-top: 7%;
+  margin-top: 5%;
   font-size: 1.0rem;
   color: #ff18697e;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -216,7 +182,7 @@ body {
 
 .room-input-field {
 	
-  margin-top: 10%;
+  margin-top: 75%;
 
   margin-left: 25px;
 
@@ -224,12 +190,17 @@ body {
 	
 	font-size: 1.5em;
 	
-	background: linear-gradient(50deg, #ff1869, #0b0b0b);
+	background: #702b2b;
+
+  
 	
 	padding: 3px;
 	
 	display: inline-block;
 	
-	border-radius: 9999em;
+	border-radius: 5px;
 	
 }
+
+
+/*signout button*/
