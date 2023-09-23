@@ -28,8 +28,8 @@ function App() {
       {!isInChat ? (
         <div className="room">
           <label> Type room name: </label>
-          <input onChange={(e) => setRoom(e.target.value) } />
-          <button
+          <input className="room-init-field" onChange={(e) => setRoom(e.target.value) } />
+          <button className="room-init-button"
             onClick={() => {
               setIsInChat(true);
               setCurrentRoom(room)
